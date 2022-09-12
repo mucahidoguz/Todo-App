@@ -1,0 +1,42 @@
+.form {
+    box-shadow: 0px 0px 10px 3px red;
+
+}
+
+body {
+    margin-top: 100px;
+    width: 100%;
+    min-height: 869px;
+    height: auto;
+    justify-content: space-between;
+    background-image: url(../src/assets/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+#appContainer {
+width: 50%;
+max-width: 700px;
+
+}
+
+#baslik {
+color: white;
+text-shadow: 7px 3px 5px red;
+font-size: 70px;
+}
+
+#todoYet {
+color: white;
+font-size: 150%;
+font: bold;
+
+}
+
+#btnAdd {
+width: 130px;
+font-family: sans-serif;
+
+}
