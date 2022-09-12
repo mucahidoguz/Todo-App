@@ -2,9 +2,15 @@ import React from "react";
 
 
 const Todo = (props) => {
-    const { item, deleteTodo, setIsEdit, setWillUptadesTodo, setTodoText, changeIsDone } = props;
+    const { 
+        item, 
+        deleteTodo, 
+        setIsEdit, 
+        setWillUptadeTodo, 
+        setTodoText, 
+        changeIsDone 
+    } = props;
     return (
-
 
         <div className={`alert alert-${item.isDone === true ? "success" : "primary"
             } 
@@ -18,16 +24,19 @@ const Todo = (props) => {
                 >
                     {item.isDone === false ? "Done" : "Undone"}
                 </button>
+
                 <button className='btn btn-sm btn-success mx-2 px-3'
                     onClick={() => {
                         setIsEdit(true);
-                        setWillUptadesTodo(item.id);
+                        setWillUptadeTodo(item.id);
                         setTodoText(item.text);
                     }}
                 >Edit</button>
+
                 <button className="btn btn-sm btn-danger mx-2 px-2"
                     onClick={() => deleteTodo(item.id)}
                 >Delete</button>
+                
             </div>
         </div>
     )
